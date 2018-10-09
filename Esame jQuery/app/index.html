@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main grid-x">
+        <div class="cell medium-5"></div>
+        <div class="cell mioForm medium-5">
+            <h1 class="titolo">Chatta anche tu!</h1>
+            <form>
+
+                <label for="name">Nome</label>
+                <span class="errNome">Il campo Nome deve contenere almeno 3 caratteri</span>
+                <input id="name" type="text" />
+                <label for="surname">Cognome</label>
+                <span class="errCognome">Il campo Cognome deve contenere almeno 3 caratteri</span>
+                <input id="surname" type="text" />
+                <label for="object">Oggetto</label>
+                <span class="errOggetto">Il campo Oggetto deve essere vuoto o contenere almeno 5 caratteri</span>
+                <input id="object" type="text" />
+                <label for="message">Messaggio</label>
+                <span class="errMessaggio">Il campo Messaggio deve contenere qualcosa</span>
+                <textarea id="message" type="text"></textarea>
+                <input class="button" type="submit" value="Invia i dati">
+            </form>
+            <input id="return" class="button" type="submit" value="Ritorna al Form">
+        </div>
+        <div class="cell medium-7">
+            <div class="history">
+                <div class="chat"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+    </script>
+    <script src="js/mainChat.js"></script>
+</body>
+
+</html>

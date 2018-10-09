@@ -1,0 +1,94 @@
+body {
+    
+}
+.bordo {
+    animation: pop 3s;
+}
+.main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 0 30px;
+    height: 100vh;
+}
+.chat {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 98vh;
+    border: 5px solid transparent;
+    & p {
+        margin-bottom: 2px;
+    }
+}
+.object {
+    margin-bottom: -8px;
+    display: block;
+    font-size: 0.7em;
+}
+.nomeChat {
+    display: block;
+    font-size: 1em;
+}
+.mioForm {
+    margin: 0 auto;
+    display: block;
+    max-width: 700px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+.errNome, .errCognome, .errMessaggio, .errOggetto {
+    font-size: 0.7em;
+    color: red;
+    display: none;
+}
+#message {
+    min-height: 120px;
+    min-width: 100%;
+}
+.contChat {
+    overflow: scroll;
+}
+.button {
+    width: 100%;
+}
+.complimento {
+    display: none;
+}
+h1 {
+    margin-bottom: 20px;
+}
+#return {
+    display: none;
+}
+.chatContainer {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    color: #454545;
+    background-color: #deffe1;
+    font-size: 0.9em;
+}
+.history {
+    margin: 0 auto;
+    width: 90%;
+    float: right;
+    background-image: url(http://www.psicologataranto.it/wp-content/uploads/2014/09/sfondo-bianco-sporco.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 10px 30px;
+}
+.ora {
+    min-width: 360px;
+    max-width: 500px;
+}
+@keyframes pop {
+    0% {
+        border: 5px solid greenyellow;
+    }
+    100% {
+        border: 5px solid white;
+    }
+}
